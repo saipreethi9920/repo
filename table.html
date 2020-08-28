@@ -5,7 +5,7 @@
 body { background-color: light blue;
 	}
 img {
-	float: top left;
+	float: right;
 	}
 h1 { font-style: italic;
 	border: 2px solid black;
@@ -13,15 +13,24 @@ h1 { font-style: italic;
 	color: white;
 	padding: 25px 25px 25px 25px;
 	}
- [class*="table"] {
-	color: white;
-	background-color: black;
-	outline-style: dashed; 
-	outline-color: red;
-	outline-width: thick;
 }
+table {
+	border-collapse: collapse;
+	width: 100%;
+	}
+th, td {
+	text-align:left;
+	padding: 8px;
+}
+tr:nth-child(even) {background-color: lightblue;}
 p { position: static;
 	}
+table.l {
+	float: left;
+}
+table.r {
+	float: right;
+}
 <title>table</title>
 </style>
 </head>
@@ -33,10 +42,10 @@ p { position: static;
 	<p>our university is located in guntur</p>
 	<img src="bts.jpg" alt="bts" style="width:270px;height:270px;">
 <h2>table </h2>
-<table border="2px" style="align-content:center" class="table";>
+<table  style="align-content:center";>
 <tr>
-<th>subject</th>
-<th>marks</th>
+<th>subject </th>
+<th>marks </th>
 <th>sem</th>
 </tr>
 <tr>
